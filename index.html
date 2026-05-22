@@ -362,7 +362,14 @@ tailwind.config = {
         </div>
         <!-- Right panel: form -->
         <div class="p-8 md:p-10">
-          <form action="mailto:elizaponia@gmail.com" method="POST" enctype="text/plain" class="space-y-5">
+          <form id="contact-form" action="https://formsubmit.co/elizaponia@gmail.com" method="POST" class="space-y-5">
+            <!-- FormSubmit config -->
+            <input type="hidden" name="_subject" value="Contact STRATEA">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://stratea.solutions/#contact">
+
+
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
                 <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Nom *</label>
@@ -394,11 +401,11 @@ tailwind.config = {
               <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Votre message *</label>
               <textarea name="Message" required rows="4" placeholder="Décrivez votre projet, vos enjeux, vos objectifs de croissance..." class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-dark-border bg-slate-50 dark:bg-dark-elevated text-foreground dark:text-dark-foreground placeholder:text-slate-400 focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium resize-y"></textarea>
             </div>
-            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#0F1F45] to-[#1E3A8A] text-white font-bold text-base hover:from-[#132D6B] hover:to-[#2545A3] shadow-lg shadow-primary/25 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 flex items-center justify-center gap-2">
-              Envoyer ma demande
+            <button type="submit" id="submit-btn" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#0F1F45] to-[#1E3A8A] text-white font-bold text-base hover:from-[#132D6B] hover:to-[#2545A3] shadow-lg shadow-primary/25 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 flex items-center justify-center gap-2">
+              <span id="submit-text">Envoyer ma demande</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </button>
-            <p class="text-xs text-slate-400 text-center">En cliquant, votre client email s'ouvrira avec les informations pré-remplies.</p>
+            <p class="text-xs text-slate-400 text-center">Formulaire sécurisé · Réponse sous 24h</p>
           </form>
         </div>
       </div>
@@ -478,6 +485,20 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.35 });
 
 document.querySelectorAll('.count-up').forEach(el => counterObserver.observe(el));
+
+// ── Form submission with feedback ──
+const form = document.getElementById('contact-form');
+if (form) {
+  form.addEventListener('submit', function() {
+    const btn = document.getElementById('submit-btn');
+    const txt = document.getElementById('submit-text');
+    if (btn && txt) {
+      txt.textContent = 'Envoi en cours...';
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+    }
+  });
+}
 </script>
 </body>
 </html>
