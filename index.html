@@ -334,8 +334,74 @@ tailwind.config = {
         Un premier échange pour comprendre vos enjeux et identifier les leviers de croissance. <strong>Sans engagement.</strong>
       </p>
     </div>
-    <div class="bg-white dark:bg-dark-card rounded-2xl shadow-lg shadow-slate-200/50 dark:shadow-black/20 overflow-hidden">
-      <iframe src="https://tally.so/r/jakByY?transparentBackground=1" loading="lazy" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0" title="Contactez STRATEA" style="border-radius:16px"></iframe>
+    <div class="reveal bg-white dark:bg-dark-card rounded-3xl shadow-xl shadow-slate-300/60 dark:shadow-black/30 border border-slate-200 dark:border-dark-border overflow-hidden">
+      <div class="grid md:grid-cols-[1fr_1.2fr]">
+        <!-- Left panel -->
+        <div class="bg-gradient-to-br from-[#0F1F45] to-[#132D6B] p-8 md:p-10 text-white flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-accent/20 flex items-center justify-center mb-6">
+              <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-2xl mb-3 text-white">Parlons de votre projet</h3>
+            <p class="text-blue-200 leading-relaxed text-sm">Un premier échange pour comprendre vos enjeux. Réponse sous 24h.</p>
+          </div>
+          <div class="hidden md:block mt-8 space-y-4 text-sm text-blue-200">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0"><span class="text-accent text-xs">✓</span></span>
+              <span>Audit initial offert</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0"><span class="text-accent text-xs">✓</span></span>
+              <span>Paiement au résultat</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0"><span class="text-accent text-xs">✓</span></span>
+              <span>Sans engagement</span>
+            </div>
+          </div>
+        </div>
+        <!-- Right panel: form -->
+        <div class="p-8 md:p-10">
+          <form action="mailto:elizabeth@stratea.solutions" method="POST" enctype="text/plain" class="space-y-5">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Nom *</label>
+                <input type="text" name="Nom" required placeholder="Votre nom" class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-dark-border bg-slate-50 dark:bg-dark-elevated text-foreground dark:text-dark-foreground placeholder:text-slate-400 focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium">
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Email *</label>
+                <input type="email" name="Email" required placeholder="vous@entreprise.fr" class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-dark-border bg-slate-50 dark:bg-dark-elevated text-foreground dark:text-dark-foreground placeholder:text-slate-400 focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium">
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Entreprise</label>
+              <input type="text" name="Entreprise" placeholder="Nom de votre entreprise" class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-dark-border bg-slate-50 dark:bg-dark-elevated text-foreground dark:text-dark-foreground placeholder:text-slate-400 focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Secteur d'activité</label>
+              <select name="Secteur" class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-dark-border bg-slate-50 dark:bg-dark-elevated text-foreground dark:text-dark-foreground focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium">
+                <option value="">-- Sélectionner --</option>
+                <option value="Commerce">Commerce / Retail</option>
+                <option value="Services">Services aux entreprises</option>
+                <option value="Artisanat">Artisanat / BTP</option>
+                <option value="Restauration">Restauration / Hôtellerie</option>
+                <option value="Santé">Santé / Bien-être</option>
+                <option value="Tech">Tech / Numérique</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Votre message *</label>
+              <textarea name="Message" required rows="4" placeholder="Décrivez votre projet, vos enjeux, vos objectifs de croissance..." class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-dark-border bg-slate-50 dark:bg-dark-elevated text-foreground dark:text-dark-foreground placeholder:text-slate-400 focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium resize-y"></textarea>
+            </div>
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#0F1F45] to-[#1E3A8A] text-white font-bold text-base hover:from-[#132D6B] hover:to-[#2545A3] shadow-lg shadow-primary/25 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 flex items-center justify-center gap-2">
+              Envoyer ma demande
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <p class="text-xs text-slate-400 text-center">En cliquant, votre client email s'ouvrira avec les informations pré-remplies.</p>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </section>
