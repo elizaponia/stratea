@@ -88,14 +88,14 @@ tailwind.config = {
 </head>
 <body class="font-body bg-slate-100 text-foreground  antialiased overflow-x-hidden">
 <!-- Nav -->
-<nav class="fixed top-0 left-0 right-0 z-50 bg-slate-100/98 backdrop-blur-xl border-b-2 border-slate-200 ">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-slate-100/98 backdrop-blur-xl border-b-2 border-slate-200">
   <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
     <a href="#" class="flex items-center gap-2.5 font-display font-bold text-lg">
       <img src="/logo-header.png" alt="STRATEA" width="40" height="40" class="w-10 h-10 object-contain"
            srcset="/logo-header.png 1x, /logo-2x.png 2x">
       <span class="hidden sm:inline">STRATEA SOLUTIONS</span>
     </a>
-    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600 ">
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
       <a href="#approche" class="hover:text-primary">Approche</a>
       <a href="#chiffres" class="hover:text-primary">Chiffres clés</a>
       <a href="#services" class="hover:text-primary">Services</a>
@@ -107,9 +107,7 @@ tailwind.config = {
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         LinkedIn
       </a>
-      <button id="theme-toggle" class="p-2 rounded-lg hover:bg-muted " aria-label="Basculer mode sombre">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
-      </button>
+      
     </div>
   </div>
 </nav>
@@ -149,7 +147,7 @@ tailwind.config = {
 </section>
 
 <!-- Approche / Méthodologie -->
-<section id="approche" class="py-12 md:py-14 bg-slate-100 ">
+<section id="approche" class="py-12 md:py-14 bg-slate-100">
   <div class="max-w-7xl mx-auto px-6">
     <div class="mb-12 reveal">
       <p class="text-primary font-display font-bold uppercase tracking-wide text-sm mb-3">La méthode STRATEA</p>
@@ -165,7 +163,7 @@ tailwind.config = {
           </div>
           <div>
             <h3 class="font-display font-bold text-xl mb-1 text-accent">Phase 1 — Audit d'activité</h3>
-            <p class="text-sm text-slate-500 ">Livrable principal</p>
+            <p class="text-sm text-slate-500">Livrable principal</p>
           </div>
         </div>
         <ul class="space-y-3 text-slate-600 ml-16">
@@ -184,7 +182,7 @@ tailwind.config = {
           </div>
           <div>
             <h3 class="font-display font-bold text-xl mb-1 text-accent">Phase 2 — Optimisation</h3>
-            <p class="text-sm text-slate-500 ">Accompagnement opérationnel</p>
+            <p class="text-sm text-slate-500">Accompagnement opérationnel</p>
           </div>
         </div>
         <ul class="space-y-3 text-slate-600 ml-16">
@@ -200,7 +198,7 @@ tailwind.config = {
 </section>
 
 <!-- Chiffres clés -->
-<section id="chiffres" class="py-14 md:py-16 bg-slate-200 ">
+<section id="chiffres" class="py-14 md:py-16 bg-slate-200">
   <div class="max-w-7xl mx-auto px-6">
     <div class="mb-12 reveal">
       <p class="text-accent font-display font-bold uppercase tracking-wide text-sm mb-3">Impact mesurable</p>
@@ -229,7 +227,7 @@ tailwind.config = {
 </section>
 
 <!-- Services -->
-<section id="services" class="py-12 md:py-14 bg-slate-100 ">
+<section id="services" class="py-12 md:py-14 bg-slate-100">
   <div class="max-w-7xl mx-auto px-6">
     <div class="mb-12 reveal">
       <p class="text-primary font-display font-bold uppercase tracking-wide text-sm mb-3">Services</p>
@@ -237,19 +235,19 @@ tailwind.config = {
       <p class="mt-4 text-lg text-slate-600 max-w-3xl">Chaque entreprise est unique. L'accompagnement s'adapte à votre <strong>stade de maturité</strong> et à vos <strong>objectifs de croissance</strong>.</p>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="reveal gesture-card card-hover rounded-2xl p-6 border border-border bg-surface ">
+      <div class="reveal gesture-card card-hover rounded-2xl p-6 border border-border bg-surface">
         <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4"><span class="text-2xl">🧭</span></div>
         <h3 class="font-display font-bold text-lg mb-2">Diagnostic 360°</h3>
         <p class="text-sm text-slate-600 leading-relaxed mb-4">Un audit concentré sur 2 semaines pour identifier <strong>les 3 leviers prioritaires</strong> de votre croissance. Rapport exécutif avec plan d'action.</p>
         <p class="text-xs text-slate-400 font-medium">Idéal pour : première collaboration</p>
       </div>
-      <div class="reveal gesture-card card-hover rounded-2xl p-6 border border-border bg-surface " style="animation-delay: 0.1s">
+      <div class="reveal gesture-card card-hover rounded-2xl p-6 border border-border bg-surface" style="animation-delay: 0.1s">
         <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4"><span class="text-2xl">🎯</span></div>
         <h3 class="font-display font-bold text-lg mb-2">Croissance Boost</h3>
         <p class="text-sm text-slate-600 leading-relaxed mb-4">Accompagnement trimestriel avec <strong>coaching leadership</strong> + optimisation opérationnelle. Suivi KPI et ajustements en continu.</p>
         <p class="text-xs text-slate-400 font-medium">Idéal pour : TPE en phase de scale</p>
       </div>
-      <div class="reveal gesture-card card-hover rounded-2xl p-6 border border-border bg-surface " style="animation-delay: 0.2s">
+      <div class="reveal gesture-card card-hover rounded-2xl p-6 border border-border bg-surface" style="animation-delay: 0.2s">
         <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4"><span class="text-2xl">👑</span></div>
         <h3 class="font-display font-bold text-lg mb-2">Leadership Premium</h3>
         <p class="text-sm text-slate-600 leading-relaxed mb-4">Programme intensif de <strong>développement du leadership entrepreneurial</strong>. Vision stratégique, posture dirigeante, gestion de la croissance.</p>
@@ -260,13 +258,13 @@ tailwind.config = {
 </section>
 
 <!-- Modèle de paiement -->
-<section id="modele" class="py-12 md:py-14 bg-gradient-to-br from-primary/5 via-white to-accent/5 ">
+<section id="modele" class="py-12 md:py-14 bg-gradient-to-br from-primary/5 via-white to-accent/5">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid lg:grid-cols-[1fr_1fr] gap-8 items-center">
       <div class="reveal">
         <p class="text-accent font-display font-bold uppercase tracking-wide text-sm mb-3">Le modèle STRATEA</p>
         <h2 class="section-title font-display mb-5">Paiement sur le gap de chiffre d'affaires</h2>
-        <p class="text-lg text-slate-600 leading-relaxed mb-4">Un modèle <strong class="text-foreground ">unique et équitable</strong> : vous ne payez qu'à hauteur de la valeur créée.</p>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">Un modèle <strong class="text-foreground">unique et équitable</strong> : vous ne payez qu'à hauteur de la valeur créée.</p>
         <div class="flex flex-wrap gap-3 mt-5">
           <span class="loop-chip px-4 py-2 rounded-full bg-accent/10 text-accent font-bold text-sm">Alignement d'intérêts</span>
           <span class="loop-chip px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm">Résultat garanti</span>
@@ -278,19 +276,19 @@ tailwind.config = {
         <div class="space-y-5">
           <div class="flex items-center gap-4">
             <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0"><span class="font-bold text-primary">1</span></div>
-            <div><p class="font-bold">Audit initial offert</p><p class="text-sm text-slate-500 ">Évaluation gratuite du potentiel de croissance</p></div>
+            <div><p class="font-bold">Audit initial offert</p><p class="text-sm text-slate-500">Évaluation gratuite du potentiel de croissance</p></div>
           </div>
           <div class="flex items-center gap-4">
             <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0"><span class="font-bold text-accent">2</span></div>
-            <div><p class="font-bold">Définition de la baseline</p><p class="text-sm text-slate-500 ">Nous fixons ensemble votre chiffre d'affaires de référence</p></div>
+            <div><p class="font-bold">Définition de la baseline</p><p class="text-sm text-slate-500">Nous fixons ensemble votre chiffre d'affaires de référence</p></div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0"><span class="font-bold text-accent-dark ">3</span></div>
-            <div><p class="font-bold">Honoraires sur le gap</p><p class="text-sm text-slate-500 ">Pourcentage appliqué <strong>uniquement</strong> sur l'augmentation de CA générée par nos actions</p></div>
+            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0"><span class="font-bold text-accent-dark">3</span></div>
+            <div><p class="font-bold">Honoraires sur le gap</p><p class="text-sm text-slate-500">Pourcentage appliqué <strong>uniquement</strong> sur l'augmentation de CA générée par nos actions</p></div>
           </div>
           <div class="flex items-center gap-4">
             <div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0"><span class="font-bold">4</span></div>
-            <div><p class="font-bold">Bilan trimestriel</p><p class="text-sm text-slate-500 ">Mesure des résultats, ajustement du plan d'action</p></div>
+            <div><p class="font-bold">Bilan trimestriel</p><p class="text-sm text-slate-500">Mesure des résultats, ajustement du plan d'action</p></div>
           </div>
         </div>
       </div>
@@ -299,26 +297,26 @@ tailwind.config = {
 </section>
 
 <!-- Témoignages -->
-<section class="py-12 md:py-14 bg-slate-100 ">
+<section class="py-12 md:py-14 bg-slate-100">
   <div class="max-w-7xl mx-auto px-6">
     <div class="mb-12 reveal">
       <p class="text-accent font-display font-bold uppercase tracking-wide text-sm mb-3">Témoignages</p>
       <h2 class="section-title font-display">Ils ont franchi le cap</h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="reveal card-hover rounded-2xl p-6 border border-border bg-surface ">
+      <div class="reveal card-hover rounded-2xl p-6 border border-border bg-surface">
         <div class="flex gap-1 mb-3 text-amber-400">★ ★ ★ ★ ★</div>
         <p class="text-slate-600 italic mb-4">« Elizabeth a identifié en 10 jours ce que je cherchais depuis 2 ans. Mon CA a progressé de 28% en 6 mois. »</p>
         <p class="font-display font-bold text-sm">Marc L.</p>
         <p class="text-xs text-slate-400">Dirigeant, E-commerce — 12 salariés</p>
       </div>
-      <div class="reveal card-hover rounded-2xl p-6 border border-border bg-surface " style="animation-delay: 0.1s">
+      <div class="reveal card-hover rounded-2xl p-6 border border-border bg-surface" style="animation-delay: 0.1s">
         <div class="flex gap-1 mb-3 text-amber-400">★ ★ ★ ★ ★</div>
         <p class="text-slate-600 italic mb-4">« Le coaching leadership a transformé ma posture de dirigeante. Je pilote mieux, je délègue mieux, et ça se voit dans les chiffres. »</p>
         <p class="font-display font-bold text-sm">Sophie D.</p>
         <p class="text-xs text-slate-400">Fondatrice, Agence marketing — 8 salariés</p>
       </div>
-      <div class="reveal card-hover rounded-2xl p-6 border border-border bg-surface " style="animation-delay: 0.2s">
+      <div class="reveal card-hover rounded-2xl p-6 border border-border bg-surface" style="animation-delay: 0.2s">
         <div class="flex gap-1 mb-3 text-amber-400">★ ★ ★ ★ ★</div>
         <p class="text-slate-600 italic mb-4">« Le modèle de paiement au résultat change tout. On est dans le même bateau, et ça crée une confiance immédiate. »</p>
         <p class="font-display font-bold text-sm">Thomas R.</p>
@@ -329,7 +327,7 @@ tailwind.config = {
 </section>
 
 <!-- Contact / Tally Form -->
-<section id="contact" class="py-14 md:py-16 bg-gradient-to-b from-slate-200 to-slate-100 ">
+<section id="contact" class="py-14 md:py-16 bg-gradient-to-b from-slate-200 to-slate-100">
   <div class="max-w-3xl mx-auto px-6">
     <div class="reveal text-center mb-8">
       <p class="text-primary font-display font-bold uppercase tracking-wide text-sm mb-3">Contact</p>
@@ -423,8 +421,8 @@ tailwind.config = {
 
 </main>
 
-<footer class="py-10 border-t-2 border-slate-300 bg-slate-200 ">
-  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500 ">
+<footer class="py-10 border-t-2 border-slate-300 bg-slate-200">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
     <div class="flex items-center gap-2">
       <img src="/logo-header.png" alt="STRATEA" width="20" height="20" class="w-5 h-5 object-contain">
       <span>STRATEA — Accompagnement & Croissance des TPE</span>
