@@ -446,19 +446,6 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Dark mode toggle
-const toggle = document.getElementById('theme-toggle');
-const html = document.documentElement;
-const STORAGE_KEY = 'stratea-theme';
-const saved = localStorage.getItem(STORAGE_KEY);
-if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  html.classList.add('dark');
-}
-toggle.addEventListener('click', () => {
-  html.classList.toggle('dark');
-  localStorage.setItem(STORAGE_KEY, html.classList.contains('dark') ? 'dark' : 'light');
-});
-
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', (e) => {
