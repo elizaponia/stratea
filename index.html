@@ -73,7 +73,7 @@ tailwind.config = {
   @keyframes shimmer { 55%,100% { transform: translateX(120%); } }
   .metric-gradient { background: linear-gradient(135deg, #E8C547, #D4A830, #1E3A8A, #0F1F45); background-size: 200% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmerGradient 2.5s ease-in-out infinite; }
   @keyframes shimmerGradient { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
-  .phase-gradient { background: linear-gradient(110deg, #E8C547, #D4A830, #1E3A8A, #0F1F45, #1E3A8A, #E8C547); background-size: 200% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmerGradient 3s ease-in-out infinite; display: inline-block; }
+  .text-accent { background: linear-gradient(110deg, #E8C547, #D4A830, #1E3A8A, #0F1F45, #1E3A8A, #E8C547); background-size: 200% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmerGradient 3s ease-in-out infinite; display: inline-block; }
 
   .dark .bg-white, .dark .bg-surface { background-color: #060D1A; }
   .dark .text-slate-600 { color: #CBD5E1; }
@@ -164,7 +164,7 @@ tailwind.config = {
             <span class="text-2xl">🔍</span>
           </div>
           <div>
-            <h3 class="font-display font-bold text-xl mb-1 phase-gradient">Phase 1 — Audit d'activité</h3>
+            <h3 class="font-display font-bold text-xl mb-1 text-accent">Phase 1 — Audit d'activité</h3>
             <p class="text-sm text-slate-500 dark:text-slate-400">Livrable principal</p>
           </div>
         </div>
@@ -183,7 +183,7 @@ tailwind.config = {
             <span class="text-2xl">🚀</span>
           </div>
           <div>
-            <h3 class="font-display font-bold text-xl mb-1 phase-gradient">Phase 2 — Optimisation</h3>
+            <h3 class="font-display font-bold text-xl mb-1 text-accent">Phase 2 — Optimisation</h3>
             <p class="text-sm text-slate-500 dark:text-slate-400">Accompagnement opérationnel</p>
           </div>
         </div>
