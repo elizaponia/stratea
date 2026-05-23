@@ -16,7 +16,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400;1,6..12,600;1,6..12,700&display=swap" rel="stylesheet">
 <script>
 tailwind.config = {
-  darkMode: 'class',
   theme: { extend: { fontFamily: { display: ['Rubik','sans-serif'], body: ['Nunito Sans','sans-serif'] }, colors: { primary:'#0F1F45','primary-dark':'#091230', secondary:'#1E3A8A', accent:'#E8C547','accent-dark':'#D4A830', surface:'#F8FAFC', muted:'#EFF6FF', border:'#DBEAFE', foreground:'#0A1628','dark-surface':'#060D1A','dark-card':'#0A1628','dark-elevated':'#0F1D33','dark-border':'#1A2A44','dark-muted':'#243550','dark-foreground':'#F1F5F9','dark-dim':'#94A3B8' } } }
 }
 </script>
@@ -33,7 +32,7 @@ tailwind.config = {
 
   .section-title { position: relative; padding-bottom: 0.5rem; }
   .section-title::after { content: ""; position: absolute; bottom: 0; left: 0; width: 3rem; height: 3px; border-radius: 2px; background: linear-gradient(90deg, #0F1F45, #E8C547); }
-  .dark .section-title::after { background: linear-gradient(90deg, #4A6FA5, #E8C55A); }
+  
 
   .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
   .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -47,7 +46,7 @@ tailwind.config = {
   .premium-card { position: relative; overflow: hidden; border-color: rgba(27,42,74,.2)!important; background: linear-gradient(145deg, #ffffff 0%, #f5f7fc 52%, #eef1f9 100%); box-shadow: 0 4px 24px -8px rgba(15,31,69,.08); }
   .premium-card::before { content: ""; position: absolute; inset: -1px; pointer-events: none; background: radial-gradient(circle at 15% 0%, rgba(27,42,74,.06), transparent 38%), radial-gradient(circle at 95% 20%, rgba(212,168,67,.08), transparent 34%); }
   .premium-card > * { position: relative; }
-  .dark .premium-card { background: linear-gradient(145deg, #0A1628 0%, #0F1D33 52%, #0A1628 100%); border-color: rgba(74,111,165,.2)!important; }
+  
 
   .metric-number { font-variant-numeric: tabular-nums; letter-spacing: -.04em; }
   .float-card { animation: floatCard 4.8s ease-in-out infinite; transform-origin: center; }
@@ -75,12 +74,12 @@ tailwind.config = {
   @keyframes shimmerGradient { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
   
 
-  .dark .bg-white, .dark .bg-surface { background-color: #060D1A; }
-  .dark .text-slate-600 { color: #CBD5E1; }
-  .dark .text-slate-500 { color: #94A3B8; }
-  .dark .text-slate-400 { color: #64748B; }
-  .dark .border-border { border-color: #1A2A44; }
-  .dark .glow-word { background: linear-gradient(110deg, #4A6FA5 0%, #8BAED4 28%, #E8C547 52%, #E8C55A 78%, #4A6FA5 100%); background-size: 240% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  
+  
+  
+  
+  
+  
 
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms!important; transition-duration: 0.01ms!important; } .reveal { opacity: 1; transform: none; } .hero-stagger > * { opacity: 1; transform: none; animation: none; } }
 </style>
